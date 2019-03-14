@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hermanozols/CLionProjects/markers/main.cpp
+iostream
+-
+iomanip
+-
+fstream
+-
+string
+-
+fstream
+-
+string
+-
+vector
+-
+markers.h
+/Users/hermanozols/CLionProjects/markers/markers.h
+sstream
+-
+array
+-
+
+/Users/hermanozols/CLionProjects/markers/markers.h
+iostream
+-
+

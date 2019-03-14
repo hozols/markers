@@ -13,7 +13,7 @@
 using namespace std;
 
 int main() {
-    std :: string cmd = "open -a Safari";
+    std :: string cmd = "open terminal";
     system (cmd.c_str ());
     vector<Markers> data;                 // Create vector to store markers
     std::ifstream file("/Users/hermanozols/CLionProjects/markers/lidar.txt");
@@ -32,9 +32,12 @@ int main() {
                           strtof((tokens.at(3)).c_str(), 0)); // Creates new marker and adds it to the vector
     }
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 6301; i++) {
         Markers mar = data.at(i);
-        cout << mar.getColor();
+        cout << mar.getColor() << " ";
+        cout << mar.getX() << " ";
+        cout << mar.getY() << " ";
+        cout << mar.getZ() << " ";
         cout << "\n";
     }
 
